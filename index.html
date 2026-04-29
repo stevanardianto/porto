@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Stevan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo"> PORTOFOLIO</div>
+    <ul class="nav-links">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="close-nav" id="closeNav">&times;</div>
+  <a href="#home">Beranda</a>
+  <a href="#about">Tentang</a>
+  <a href="#contact">Kontak</a>
+</div>
+
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="side-in left visible">
+      <h1>Halo, Saya <span class="gradient-text">Stevan Ardianto</span><br>Teknik Informatika</h1>
+      <p>Saya adalah mahasiswa informatika yang memiliki minat besar dalam bidang networking dan pengembangan sistem jaringan.</p>
+      <div class="btn-group">
+        <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
+        <a href="#about" class="btn-outline"><i class="fas fa-arrow-down"></i> Tentang Saya</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="section-container">
+    <div class="side-in left">
+      <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+      <div class="section-desc">
+        Fokus pada pembelajaran jaringan komputer dan pengembangan kemampuan teknis di dunia IT.
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="card side-in right stagger-item">
+        <h3><i class="fas fa-network-wired"></i> Networking Enthusiast</h3>
+        <p>.</p>
+        <p>
+          Saya Stevan Ardianto, mahasiswa Teknik Informatika yang memiliki ketertarikan dalam bidang jaringan komputer.
+          Saat ini saya sedang mempelajari konsep dasar hingga lanjutan seperti konfigurasi jaringan, routing, dan simulasi jaringan.
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">Networking</span>
+          <span class="skill-tag">MikroTik</span>
+          <span class="skill-tag">Cisco</span>
+          <span class="skill-tag">GNS3</span>
+          <span class="skill-tag">TCP/IP</span>
+        </div>
+      </div>
+
+      <div class="card side-in left stagger-item">
+        <h3><i class="fas fa-user"></i> Biodata</h3>
+        <div style="margin-top: 20px;">
+          <div class="info-row">
+            <div class="info-icon"><i class="fas fa-user"></i></div>
+            <div><strong>Stevan Ardianto</strong><br>Mahasiswa Teknik Informatika</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>Sidoarjo, Jawa Timur</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>ardiantostevan@email.com</div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
+            <div>Sedang belajar & mengembangkan skill jaringan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="section-container">
+    <div class="side-in right">
+      <h2 class="section-title">Kontak Saya</h2>
+    </div>
+    <div class="contact-flex">
+      <div class="contact-card side-in left stagger-item">
+        <div class="contact-item">
+          <div class="contact-icon-big"><i class="fas fa-envelope"></i></div>
+          <div><h4>Email Utama</h4><a href="mailto:fajar@work.dev" style="color:#2563eb;">ardiantostevan@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-big"><i class="fab fa-whatsapp"></i></div>
+          <div><h4>WhatsApp</h4><p>+62 821 1111 0000</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-big"><i class="fas fa-map-pin"></i></div>
+          <div><h4>Lokasi</h4><p>Sidoarjo, Jawa Timur</p></div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-card side-in right stagger-item">
+        <h3 style="margin-bottom: 1.2rem;"><i class="fas fa-pen-fancy"></i> Kirim pesan</h3>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Nama lengkap" required>
+          <input type="email" id="email" placeholder="Alamat email" required>
+          <textarea rows="4" id="message" placeholder="Ceritakan ide atau proyek Anda..." required></textarea>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Kirim Sekarang</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Fajar Maulana — animasi side-in interaktif | dibuat dengan <i class="fas fa-heart" style="color:#ef4444;"></i></p>
+</footer>
+
+<div id="toastMsg" style="position: fixed; bottom: 25px; right: 25px; background: #1f2937; color: white; padding: 12px 24px; border-radius: 60px; z-index: 300; font-size: 0.8rem; opacity: 0; transform: translateY(40px); transition: 0.3s; backdrop-filter: blur(8px); pointer-events: none;">✨ Pesan berhasil terkirim!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
